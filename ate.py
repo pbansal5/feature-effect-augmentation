@@ -178,7 +178,7 @@ elif (params.method == 'propensity_estimator'):
 else : 
     this_weight = config_weights['cer_weight']
 
-wandb.login(key="e45d2f6c4df62f742cc5974e9865de8bfeaacc00")
+wandb.login(key="e45d2f6c4df62f742cc5974e9865de8bfeaa")
 wandb.init(project=params.wandb_name, entity="pbansal")
 wandb.run.name = '%s%0.3frs_weight_%s_%s_%0.2fcer_target_%s_model_%sseed_%0.1fgamma'%(params.prepend,this_weight,dataset,method,cer_target,model_name,params.seed,params.gamma)
 
